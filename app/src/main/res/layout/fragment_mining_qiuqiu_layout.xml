@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/iv_mining_qiuqiu_bg"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="11sp"
+            android:id="@+id/tv_mining_count"
+            android:textColor="#79a719"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginLeft="12dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textColor="#79a719"
+            android:text="挖矿中"
+            android:textSize="10sp"
+            android:id="@+id/tv_mining_prompt"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <ImageView
+        android:id="@+id/iv_mining_hand"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@mipmap/iv_mining_hand"
+        />
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

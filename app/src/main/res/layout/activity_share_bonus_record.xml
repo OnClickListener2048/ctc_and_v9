@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="福利记录"
+            android:textColor="#4d4d4d"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_back2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:id="@+id/lv_share_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#f5f5f5"
+            android:scrollbars="none"
+            android:divider="@color/main_color"
+            android:dividerHeight="1dp"
+            android:childDivider="@color/main_color"></ExpandableListView>
+
+
+        <com.tohier.cartercoin.columnview.LoadingView
+            android:id="@+id/gif_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <com.tohier.cartercoin.columnview.NoLinkView
+            android:id="@+id/iv_no_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            />
+
+        <com.tohier.cartercoin.columnview.NoDataView
+            android:visibility="gone"
+            android:id="@+id/iv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
+

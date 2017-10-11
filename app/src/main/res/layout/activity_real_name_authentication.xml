@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="实名认证"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <EditText
+                        android:padding="8dp"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_efefef"
+                        android:hint="真实姓名"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginRight="@dimen/margin_left_right"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <EditText
+                        android:padding="8dp"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/et_id_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_efefef"
+                        android:hint="身份证号"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginRight="@dimen/margin_left_right"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="身份证照片"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="@dimen/margin_left_right"
+                        android:textSize="12sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_zheng"
+                        android:layout_width="226dp"
+                        android:layout_height="142dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/shenfen1"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_fan"
+                        android:layout_width="226dp"
+                        android:layout_height="142dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/shenfen2"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/shenfen3"
+                        android:padding="10dp"
+                        />
+
+
+                    <Button
+                        android:textColor="#ffffff"
+                        android:text="提交认证"
+                        android:layout_marginRight="10dp"
+                        android:padding="8dp"
+                        android:id="@+id/btn_commit_authentication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_feb831"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_xuzhi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="本次实名认证符合国家网信办对APP实名认证的政策要求。"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/margin_left_right"
+                        android:textSize="10sp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_xuzhi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="实名认证后便无法修改该信息，请妥善填写。"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="@dimen/margin_left_right"
+                        android:textSize="10sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="分乐宝郑重承诺：我们会对您的个人信息进行高度保密，绝不会在法律规定的情况以外对第三方泄漏。"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="@dimen/margin_left_right"
+                        android:textSize="10sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+    </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:visibility="gone"
+            android:id="@+id/gif_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/loading1"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+</LinearLayout>

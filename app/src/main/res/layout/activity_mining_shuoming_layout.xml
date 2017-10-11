@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于挖矿"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <TextView
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="挖矿是在分乐宝内获取α资产的最基础方法，所有下载注册分乐宝的用户均可以通过挖矿获得α资产。影响用户挖矿速度与效率的有以下五大要素：
+①算力：用户注册分乐宝后会获赠一定量的基础算力，用户可以通过升级会员（即购买资产包）、分享邀请新用户注册分乐宝、购买α资产的方式来提升算力，算力越高，挖矿的效率就越高。需要特别告知大家的是，与之前版本不同，现在的算力不会因为挖矿而消耗降低，也就是说大家可以一直享有免费挖矿的权利。
+②分享人数：以7天内的平均每天分享人数计算，平均每天分享达1人次，即可获得在分享人数要素上的100%的挖矿速度加成。您本人的每一个直接分享计算为1人次，您的同班的直接分享计算为0.5人次，您的同系的直接分享计算为0.25人次。（有关同学关系的详细介绍参见下文）。
+③活跃度：以用户在同学汇内每天的点赞与被点赞数量计算，每次点赞可获得0.5活跃度，5点封顶（每天每人在同学汇内可以点赞10次），每次被点赞可获得0.5活跃度，5点封顶；每天获得10点活跃度，即可得到在活跃度要素上的100%挖矿速度加成。
+④能量：以用户α资产账户中的余额（即用户当前的α资产持币量）计算，并结合实时的α资产兑人民币汇率，持有价值100元人民币的α资产，即可获得能量要素上的100%挖矿速度加成，超过100元人民币也按照100%给予加成。
+⑤任务：以用户每天完成的任务价值计算。结合实时的α资产兑人民币汇率，每日完成价值10元人民币的任务，即可获得任务要素上的100%挖矿速度加成。
+"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+</LinearLayout>

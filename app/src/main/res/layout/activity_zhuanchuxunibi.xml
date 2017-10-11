@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/fenxiang_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_alignParentTop="true"
+                >
+
+                <RelativeLayout
+                    android:layout_width="45dip"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:id="@+id/title_back"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/iv_gary_back" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/login_main_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="资产转出"
+                    android:textColor="#4d4d4d"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:textColor="#666666"
+                    android:text="转出记录"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_zhuanchujilu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:paddingRight="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/main_color"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_keyongkatebi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/title_text"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_keyongkatebi_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/title_text"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_keyongkatebi"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/tv_keyongkatebi_count"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/et_qianbaoaddress"
+                            android:layout_width="0dp"
+                            android:layout_height="35dip"
+                            android:background="@drawable/bg_shape_efefef"
+                            android:hint="  钱包地址"
+                            android:textColor="#4d4d4d"
+                            android:textSize="@dimen/title_text"
+                            android:paddingLeft="8dp"
+                            android:singleLine="true"
+                            />
+
+                        <ImageView
+                            android:padding="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="0"
+                            android:id="@+id/iv_erweima"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:src="@mipmap/iv_into_erweima_saomiao"
+                            />
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_zhuanchucount"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:background="@drawable/bg_shape_efefef"
+                        android:hint="  "
+                        android:textColor="#4d4d4d"
+                        android:textSize="@dimen/title_text"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_jiaoyimima"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:background="@drawable/bg_shape_efefef"
+                        android:hint="  交易密码"
+                        android:textColor="#4d4d4d"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/title_text"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/et_pleaseshuruyzm"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dip"
+                            android:background="@drawable/bg_shape_efefef"
+                            android:hint="  请输入验证码"
+                            android:textColor="#4d4d4d"
+                            android:textSize="@dimen/title_text"
+                            android:paddingLeft="8dp"
+                            />
+
+                        <Button
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/btn_getyzm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dip"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="@dimen/margin_left_right"
+                            android:layout_marginRight="@dimen/margin_left_right"
+                            android:background="@null"
+                            android:text="获取短信验证码   "
+                            android:textColor="#feb831"
+                            android:layout_centerHorizontal="true"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="30dp"
+                        >
+
+                        <Button
+                            android:padding="8dp"
+                            android:textColor="#ffffff"
+                            android:text="转出"
+                            android:layout_weight="1"
+                            android:id="@+id/btn_comfirm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_shape_feb831"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="转出说明："
+                        android:textColor="#808080"
+                        android:textSize="10sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1.为了安全，转出虚拟币是由人工处理，您提交后，我们会在短时间内为您处理。"
+                        android:textColor="#808080"
+                        android:textSize="10sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2.为了加快转币的速度，我们会为每次转币支付网络费，但由于网络不确定性，部分转币仍会较慢，请耐心等待。"
+                        android:textColor="#808080"
+                        android:textSize="10sp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_zhuanchu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:textSize="10sp"
+                        />
+
+                    <LinearLayout
+                        android:onClick="kefu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/iv_kefu_mark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="客服"
+                            android:textSize="12sp"
+                            android:textColor="#8e8e8e"
+                            android:id="@+id/textView" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:visibility="gone"
+            android:id="@+id/gif_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/loading1"
+            android:layout_gravity="center"
+            />
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

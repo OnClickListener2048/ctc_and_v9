@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/title_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back"
+            android:onClick="back"/>
+
+        <TextView
+            android:text="点赞记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="#4d4d4d"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_zan_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="#ffffff"
+                android:layout_marginTop="3dp"
+                android:padding="20dp"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="时间"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="点赞/被点赞"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_zan_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="2dp"
+                android:scrollbars="none"
+                android:listSelector="#00000000"
+                android:divider="@color/main_color"
+                android:dividerHeight="1dp"   ></ListView>
+        </LinearLayout>
+        <com.tohier.cartercoin.columnview.LoadingView
+            android:id="@+id/cif_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <com.tohier.cartercoin.columnview.NoLinkView
+            android:id="@+id/iv_no_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+        <com.tohier.cartercoin.columnview.NoDataView
+            android:visibility="gone"
+            android:id="@+id/iv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+    </FrameLayout>
+
+</LinearLayout>

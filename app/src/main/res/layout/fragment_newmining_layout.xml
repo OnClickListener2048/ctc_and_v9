@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/ll_mining"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/title_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back"
+            android:onClick="back"/>
+
+        <TextView
+            android:text="挖矿"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tohier.cartercoin.columnview.AutoScrollView
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_mining_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@mipmap/iv_mining_day_bg"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_accunt"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/iv_account1"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="3dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/iv_mining_acount_show_bg"
+                                />
+
+                            <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/iv_mining_zichan"
+                            />
+
+                            <com.tohier.cartercoin.columnview.RunningTextView
+                            android:layout_alignRight="@id/iv_account1"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:paddingRight="5dp"
+                            android:id="@+id/tv_shouyi_account"
+                            android:paddingLeft="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#29a8df"
+                            android:text="0.000000000000000000000000000000000000"
+                            />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/iv_account2"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="3dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/iv_mining_acount_show_bg"
+                                />
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/iv_mining_xiaofei"
+                                />
+
+                            <com.tohier.cartercoin.columnview.RunningTextView
+                            android:layout_alignLeft="@id/iv_account2"
+                            android:layout_alignRight="@id/iv_account2"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:paddingLeft="26dp"
+                            android:id="@+id/tv_xiaofei_account"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#29a8df"
+                            android:text="0.0000000000000000"
+                            />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/iv_account3"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="3dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/iv_mining_acount_show_bg"
+                                />
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/iv_mining_juezhan"
+                                />
+
+                            <com.tohier.cartercoin.columnview.RunningTextView
+                            android:layout_alignRight="@id/iv_account3"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:paddingLeft="30dp"
+                            android:id="@+id/tv_juezhan_account"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#29a8df"
+                            android:text="0.0000000000000000"
+                            />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                        <!--<LinearLayout-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--&gt;-->
+
+                            <!--<FrameLayout-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--&gt;-->
+                                <!--<ImageView-->
+                                    <!--android:layout_marginLeft="3dp"-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@mipmap/iv_mining_acount_show_bg"-->
+                                    <!--/>-->
+
+                                <!--<ImageView-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:src="@mipmap/iv_mining_zichan"-->
+                                    <!--/>-->
+
+                                <!--<com.tohier.cartercoin.columnview.RunningTextView-->
+                                    <!--android:layout_marginRight="25dp"-->
+                                    <!--android:lines="1"-->
+                                    <!--android:ellipsize="end"-->
+                                    <!--android:paddingRight="5dp"-->
+                                    <!--android:id="@+id/tv_shouyi_account"-->
+                                    <!--android:paddingLeft="30dp"-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_centerVertical="true"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:textSize="10sp"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:textColor="#29a8df"-->
+                                    <!--android:text="0.000000000000000000000000000000000000"-->
+                                    <!--/>-->
+                            <!--</FrameLayout>-->
+
+                        <!--</LinearLayout>-->
+
+
+
+                        <!--<LinearLayout-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--&gt;-->
+
+                            <!--<FrameLayout-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--&gt;-->
+                                <!--<ImageView-->
+                                    <!--android:layout_marginLeft="3dp"-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@mipmap/iv_mining_acount_show_bg"-->
+                                    <!--/>-->
+
+                                <!--<ImageView-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:src="@mipmap/iv_mining_xiaofei"-->
+                                    <!--/>-->
+
+                                <!--<com.tohier.cartercoin.columnview.RunningTextView-->
+                                    <!--android:lines="1"-->
+                                    <!--android:ellipsize="end"-->
+                                    <!--android:paddingLeft="30dp"-->
+                                    <!--android:id="@+id/tv_xiaofei_account"-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_centerVertical="true"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:textSize="10sp"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:textColor="#29a8df"-->
+                                    <!--android:text="0.0000000000000000"-->
+                                    <!--/>-->
+                            <!--</FrameLayout>-->
+
+                        <!--</LinearLayout>-->
+
+
+                        <!--<LinearLayout-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--&gt;-->
+
+                            <!--<FrameLayout-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--&gt;-->
+                                <!--<ImageView-->
+                                    <!--android:layout_marginLeft="3dp"-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@mipmap/iv_mining_acount_show_bg"-->
+                                    <!--/>-->
+
+                                <!--<ImageView-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:src="@mipmap/iv_mining_juezhan"-->
+                                    <!--/>-->
+
+                                <!--<com.tohier.cartercoin.columnview.RunningTextView-->
+                                    <!--android:lines="1"-->
+                                    <!--android:ellipsize="end"-->
+                                    <!--android:paddingLeft="30dp"-->
+                                    <!--android:id="@+id/tv_juezhan_account"-->
+                                    <!--android:layout_gravity="center_vertical"-->
+                                    <!--android:layout_centerVertical="true"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:textSize="10sp"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:textColor="#29a8df"-->
+                                    <!--android:text="0.0000000000000000"-->
+                                    <!--/>-->
+                            <!--</FrameLayout>-->
+
+                        <!--</LinearLayout>-->
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="right"
+                        android:id="@+id/linearLayout_mining"
+                        android:layout_marginBottom="18dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <FrameLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_gravity="right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                >
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_gravity="center_horizontal"
+                                        android:id="@+id/iv_start_mining"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/iv_mining_xiaopangzi"
+                                        />
+
+                                    <TextView
+                                        android:textColor="#ffffff"
+                                        android:textSize="12sp"
+                                        android:visibility="invisible"
+                                        android:id="@+id/tv_this_end_time"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="本次剩余：00:00:00"
+                                        />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:paddingRight="50dp"
+                                    android:visibility="invisible"
+                                    android:id="@+id/iv_start_mining_prompt_hand"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/iv_mining_start"
+                                    />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="3dp"
+                                android:id="@+id/linearLayout_show_share_win"
+                                android:layout_gravity="right"
+                                android:paddingRight="6dp"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:background="@mipmap/iv_physical_strength_bg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:textSize="10sp"
+                                    android:textColor="#666666"
+                                    android:gravity="center"
+                                    android:text="体力:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    />
+
+                                <TextView
+                                    android:textSize="10sp"
+                                    android:lines="1"
+                                    android:ellipsize="end"
+                                    android:textColor="#f4901e"
+                                    android:layout_alignParentRight="true"
+                                    android:id="@+id/iv_mining_strength"
+                                    android:layout_gravity="right"
+                                    android:gravity="center"
+                                    android:text="【0】"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_marginBottom="80dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/linearLayout_accunt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:paddingRight="12dp"
+                            android:layout_gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                                <LinearLayout
+                                    android:layout_marginTop="6dp"
+                                    android:paddingLeft="12dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <ImageView
+                                        android:src="@mipmap/iv_mining_count"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center"
+                                        android:paddingLeft="12dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/tv_mining_count"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="#ffffff"
+                                        android:layout_alignParentRight="true"
+                                        android:gravity="center"
+                                        android:text=" x 0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_marginBottom="45dp"
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="4dp"
+                                    android:id="@+id/iv_mining_active"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:id="@+id/tv_message_count"
+                                    android:background="@mipmap/xiaodain_new"
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_alignRight="@id/iv_mining_active"/>
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="4dp"
+                                    android:ellipsize="end"
+                                    android:lines="1"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/tv_surplus_task_time"
+                                    android:textColor="#ffffff"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/iv_mining_active"
+                                    />
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_mines"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"></RelativeLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginRight="12dp"
+                                android:id="@+id/linearLayout_onekey_shou_mining"
+                                android:layout_marginTop="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="right"
+                                >
+
+                                <ImageView
+                                    android:src="@mipmap/iv_onekey_shou_mining"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    />
+
+                                <TextView
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="#ffffff"
+                                    android:layout_alignParentRight="true"
+                                    android:gravity="center"
+                                    android:text="一键收矿"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    />
+
+                                <TextView
+                                    android:text="05:00:05"
+                                    android:layout_marginLeft="4dp"
+                                    android:ellipsize="end"
+                                    android:lines="1"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/tv_onekey_time"
+                                    android:textColor="#ffffff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    />
+                            </LinearLayout>
+
+
+                            <com.tohier.cartercoin.columnview.LoadingView
+                                android:id="@+id/gif_loading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                />
+                        </FrameLayout>
+
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_shuoming"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/iv_mining_raiders"
+                        />
+
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/linearLayout_into_assets"
+                                android:gravity="center_vertical"
+                                android:background="@mipmap/iv_minging_lateralbrace"
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="#4d4d4d"
+                                        android:textSize="12sp"
+                                        android:text="购买矿产包"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:visibility="gone"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/relativeLayout_is_show_assets"
+                                android:background="@mipmap/iv_mining_ce_write"
+                                android:layout_width="25dp"
+                                android:layout_height="29dp" >
+
+                                <ImageView
+                                    android:src="@mipmap/iv_car"
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="80dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                android:id="@+id/linearLayout_geren_suanli_and_mining"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:orientation="vertical"
+                                >
+
+                                <LinearLayout
+                                    android:background="@mipmap/iv_minging_lateralbrace"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="#4d4d4d"
+                                        android:textSize="12sp"
+                                        android:text="私有矿池"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_question_mark"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:src="@mipmap/iv_check_private_pool"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_gravity="center_vertical"
+                                        android:lines="1"
+                                        android:ellipsize="end"
+                                        android:id="@+id/tv_mining_pool"
+                                        android:textColor="#4d4d4d"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" :"
+                                        android:textSize="12sp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_is_show_private_pool"
+                                android:background="@mipmap/iv_mining_ce"
+                                android:layout_width="25dp"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_marginRight="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:src="@mipmap/iv_into_luckpan"
+                        android:id="@+id/iv_into_luckpan"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_check_mining_level"
+                        android:layout_width="100dp"
+                        android:layout_height="67dp"
+                        android:background="@mipmap/iv_halo"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_mining_member_head_img"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/iv_member_default_head_img"
+                            android:layout_width="51dp"
+                            android:layout_height="51dp" />
+
+
+                        <RelativeLayout
+                            android:background="@mipmap/iv_label"
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv_mining_level"
+                                    android:textSize="10sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="Lv.0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#ffffff"
+                                    />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/linearLayout_show_share_win"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:text="体力: "-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+
+                    <!--<TextView-->
+                    <!--android:textColor="#f4901e"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:id="@+id/iv_mining_strength"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="【 0＋ 】"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+                    <!--</LinearLayout>-->
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="能量值"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_mining_comprehensive_value"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/shape_progressbar_bg2"
+                        android:progressDrawable="@drawable/shape_progressbar_comprehensive"
+                        android:max="100"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_mining_comprehensive_value"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/learLayout_into_share"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="分享"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#666666"
+                            />
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/iv_mining_share"
+                            />
+
+                        <com.tohier.cartercoin.columnview.RunningTextView
+                            android:id="@+id/tv_share"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f4901e"
+                            />
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f4901e"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/learLayout_into_active"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="活跃"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#666666"
+                            />
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/iv_mining_active"
+                            />
+
+                        <com.tohier.cartercoin.columnview.RunningTextView
+                            android:id="@+id/tv_active"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f4901e"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f4901e"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/learLayout_into_vip"
+                        android:gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="VIP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#666666"
+                            android:id="@+id/textView5" />
+
+                        <ImageView
+                            android:layout_marginLeft="2dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/iv_mining_member_icon"
+                            android:layout_marginRight="2dp"
+                            />
+
+                        <com.tohier.cartercoin.columnview.RunningTextView
+                            android:id="@+id/tv_vip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f4901e"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f4901e"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/main_color"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:text="今日排行榜"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4e4"
+                    />
+                <ListView
+                    android:id="@+id/listview_mining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></ListView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4e4"
+                    />
+                <TextView
+                    android:id="@+id/tv_more_ranking"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="13sp"
+                    android:text="查看更多排行"
+                    />
+            </LinearLayout>
+
+
+        </com.tohier.cartercoin.columnview.AutoScrollView>
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/linearLayout_barrage_prompt"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_notice_start_bg"
+                    android:scaleType="fitEnd"
+                    android:layout_width="wrap_content"
+                    android:background="@mipmap/day_bg1"
+                    android:layout_height="29dp" />
+            <TextView
+                android:lines="1"
+                android:ellipsize="end"
+                android:paddingLeft="16dp"
+                android:background="@mipmap/day_bg2"
+                android:gravity="center_vertical"
+                android:textSize="10sp"
+                android:id="@+id/tv_barrage_content"
+                android:textColor="#ffffff"
+                android:text="天津的星期一刚刚购买了3000RMB的矿产包"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp" />
+
+            <ImageView
+                android:id="@+id/iv_notice_end_bg"
+                android:scaleType="fitStart"
+                android:background="@mipmap/day_bg3"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:visibility="invisible"
+                android:layout_marginTop="0.5dp"
+                android:id="@+id/iv_barrage_headimg"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2.5dp"
+                android:src="@mipmap/iv_member_default_head_img"
+                />
+
+            </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

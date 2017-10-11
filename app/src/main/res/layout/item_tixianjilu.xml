@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:background="#33cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_jilu_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="人民币"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_jilu_time"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="2dp"
+                android:background="@mipmap/iv_time" />
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_jilu_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30" 
+                 android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:id="@+id/tv_jilu_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已完成" 
+             android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_jilu_money_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="提现金额" 
+                 android:textColor="#4d4d4d" />
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_jilu_money_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="102.00" 
+                 android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_jilu_shouxufei_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="手续费" 
+                 android:textColor="#4d4d4d" />
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_jilu_shouxufei_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="2.00"
+                 android:textColor="#666666"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_jilu_bank_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="提现银行"
+                 android:textColor="#4d4d4d"  />
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_jilu_bank_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="工商银行" 
+                 android:textColor="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

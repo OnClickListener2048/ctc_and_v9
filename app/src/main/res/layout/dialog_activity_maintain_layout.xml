@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:background="@drawable/bg_shape_ffffff_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/tv_title"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:textColor="#4d4d4d"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新维护"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:textColor="#4d4d4d"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发小哥正在卖力发版本中，预计11点开服~请等待"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_color"
+        />
+
+    <TextView
+        android:id="@+id/tv_cancel_maintain_dialog"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:gravity="center"
+        android:textColor="#feb831"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我知道了"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_shape_ffffff_buttom2"
+        />
+
+</LinearLayout>

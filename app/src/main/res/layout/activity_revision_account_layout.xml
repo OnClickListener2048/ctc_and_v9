@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的账户"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="#f26051"
+            android:layout_margin="10dp"
+            android:text="总资产"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:text="¥ 0.00"
+            android:textSize="25sp"
+            android:id="@+id/tv_all_assets"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f26051"/>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:background="@color/main_color"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_chongzhi_tab"
+                android:textColor="#feb831"
+                android:gravity="center"
+                android:text="钱包"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_tixian_tab"
+                android:textColor="#4d4d4d"
+                android:gravity="center"
+                android:text="小金库"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+            <View
+                android:background="@color/main_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transactionColor"
+                android:layout_below="@id/linearLayout"
+                />
+        </FrameLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_account_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</LinearLayout>

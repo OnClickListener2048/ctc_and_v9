@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/iv_back2"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/iv_gary_back" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        >
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#f7bd2b"
+                android:id="@+id/tv_news"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="资讯"
+                />
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/tv_gonggao"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/tv_news"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="公告"
+                />
+      </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_gonggao_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

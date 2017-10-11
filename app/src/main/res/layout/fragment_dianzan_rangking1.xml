@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scrollbars="none"
+           android:id="@+id/alv_ranking"></ListView>
+    </FrameLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_loading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/loading1"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text="距离点赞活动开始时间还剩"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:id="@+id/tv_dianzan_tishi" />
+
+        <TextView
+            android:textColor="#ff0000"
+            android:text=""
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/tv_dianzan_tishi"
+            android:id="@+id/tv_dianzan_time" />
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#aaaaaa"
+            android:text="查看活动细则"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:id="@+id/tv_href_gonggao"
+            android:layout_below="@+id/tv_dianzan_time"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

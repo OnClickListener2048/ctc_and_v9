@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_popupwindow_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/photo_popupwindow_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/photo_popupwindow_item_camera"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@null"
+            android:text="拍照"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc" />
+
+        <Button
+            android:id="@+id/photo_popupwindow_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@null"
+            android:text="从相册中选取"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc" />
+
+        <Button
+            android:id="@+id/photo_popupwindow_item_look"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+    </LinearLayout>
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/iv_cancel"
+            android:layout_width="42dp"
+            android:layout_height="40dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>

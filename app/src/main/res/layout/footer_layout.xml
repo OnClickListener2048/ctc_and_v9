@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e7e7e7">
+
+    <TextView
+        android:id="@+id/tv_count1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系人"
+        android:textColor="#4d4d4d"
+        android:padding="15dp"
+        android:gravity="center"/>
+</LinearLayout>

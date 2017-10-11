@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="优惠券"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:onClick="back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+
+    </RelativeLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+       <LinearLayout
+           android:layout_weight="1"
+           android:background="@color/main_color"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:orientation="vertical"
+           android:paddingLeft="15dp"
+           android:paddingTop="15dp"
+           android:paddingRight="15dp"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="@mipmap/iv_coupon_write_bg"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="17sp"
+                   android:layout_gravity="center_vertical"
+                   android:text="总额"
+                   android:layout_marginLeft="10dp"
+                   android:textColor="#000000"
+                   />
+
+                <ImageView
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/iv_coupon_icon"
+                    />
+
+               <TextView
+                   android:id="@+id/tv_coupon_money"
+                   android:textStyle="bold"
+                   android:textColor="#d3363d"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="25sp"
+                   android:layout_gravity="center_vertical"
+                   android:text=""
+                   android:layout_marginRight="10dp"
+                   />
+           </LinearLayout>
+
+           <ListView
+               android:scrollbars="none"
+               android:divider="@color/main_color"
+               android:dividerHeight="15dip"
+               android:id="@+id/lv_coupon"
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"></ListView>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_into_invalid_coupon"
+        android:visibility="invisible"
+        android:textColor="#cccccc"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看失效券>"
+        />
+
+
+    </LinearLayout>
+    <com.tohier.cartercoin.columnview.LoadingView
+        android:id="@+id/gif_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <com.tohier.cartercoin.columnview.NoLinkView
+        android:id="@+id/iv_no_link"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="#ffffff"
+        />
+    <com.tohier.cartercoin.columnview.NoDataView
+        android:visibility="gone"
+        android:id="@+id/iv_isnull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#ffffff"
+        />
+
+</FrameLayout>
+</LinearLayout>

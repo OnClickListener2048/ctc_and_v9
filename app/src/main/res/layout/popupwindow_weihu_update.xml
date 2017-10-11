@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginLeft="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_into_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/iv_weihu_bg"
+        />
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/iv_cancel_authentication"
+            android:padding="10dp"
+            android:layout_alignRight="@id/iv_into_authentication"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_cancel_authentication"
+            />
+        <ImageView
+            android:id="@+id/iv_weihu_icon"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_weihu_icon"
+            />
+
+
+        <LinearLayout
+            android:layout_toRightOf="@id/iv_weihu_icon"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignRight="@id/iv_into_authentication"
+            >
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统维护中..."
+                />
+
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间:2017.1.5"
+                />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间:2017.1.10"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

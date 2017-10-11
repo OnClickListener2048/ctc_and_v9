@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_member_head_img"
+                android:src="@mipmap/iv_member_default_head_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_alignRight="@id/iv_member_head_img"
+                android:id="@+id/tv_msg_count"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="8sp"
+                android:background="@mipmap/jiaobiao"/>
+
+            <TextView
+                android:layout_toRightOf="@id/iv_member_head_img"
+                android:lines="1"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="无名小卒"
+                android:id="@+id/tv_name"
+                android:textColor="#000000"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_into_profitdetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="收益明细"
+            android:id="@+id/tv_into_profitdetail"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:layout_gravity="center_vertical|right"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_right_arror"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+    android:background="@color/main_color"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    >
+
+    <TextView
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:text="今日总贡献"
+        android:textColor="#000000"
+    />
+
+
+    <TextView
+        android:id="@+id/tv_contribution_today"
+    android:gravity="center"
+    android:layout_gravity="bottom|right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:layout_marginRight="13dp"
+        android:textColor="#000000"
+    />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="7日收球量"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:gravity="center"
+            android:layout_gravity="bottom|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginRight="13dp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    >
+
+    <TextView
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:text="总贡献"
+        android:textColor="#000000"
+    />
+
+
+    <TextView
+        android:id="@+id/tv_allcontribution"
+    android:gravity="center"
+    android:layout_gravity="top|right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:layout_marginRight="13dp"
+        android:textColor="#000000"
+    />
+    </LinearLayout>
+</LinearLayout>

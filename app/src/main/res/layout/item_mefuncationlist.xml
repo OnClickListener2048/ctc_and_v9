@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <com.tohier.android.view.ResizableImageView
+            android:id="@+id/my_gridview_item"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon"
+            android:layout_gravity="bottom"/>
+        <TextView
+            android:id="@+id/tv_msg_count"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:text="1"
+            android:background="@mipmap/jiaobiao"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:visibility="gone"
+            android:textColor="#ffffff"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_marginTop="53dp"
+        android:id="@+id/my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:text="dddddd"
+        android:textColor="#000000"
+/>
+
+</RelativeLayout>

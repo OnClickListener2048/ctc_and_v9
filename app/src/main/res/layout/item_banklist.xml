@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+	>
+    <LinearLayout
+        android:paddingBottom="15dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/iv_bank_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+            
+        <TextView
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_banktype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="中国农业银行"
+            android:layout_weight="1"
+            android:textColor="#4d4d4d" />
+        
+         <ImageView
+             android:padding="12dp"
+            android:id="@+id/iv_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_delete"
+            android:layout_gravity="center_vertical"
+            />
+        </LinearLayout>
+        
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="户    名:    xxx"
+            android:textColor="#4d4d4d" />
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/tv_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="开户行:    xx  xx   xxxxx"
+            android:textColor="#4d4d4d" />
+
+        <TextView
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="14sp"
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="卡    号:    * * * * "
+            android:textColor="#4d4d4d" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

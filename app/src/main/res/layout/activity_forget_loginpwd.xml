@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                >
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/tv_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="找回登录密码"
+                    android:textColor="#4d4d4d" />
+
+                <ImageView
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/iv_back2"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/iv_gary_back" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/main_color"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <EditText
+                android:maxLength="11"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:id="@+id/et_phonenum"
+                android:textColor="#666666"
+                android:text=""
+                android:hint="手机号"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:paddingLeft="8dp"
+                android:background="@drawable/bg_shape_efefef"
+                android:inputType="number"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:id="@+id/et_yzm"
+                    android:textColor="#666666"
+                    android:text=""
+                    android:hint="验证码"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:paddingLeft="8dp"
+                    android:background="@drawable/bg_shape_efefef"
+                    />
+
+                <Button
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_getyzm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:text="获取短信验证码   "
+                    android:textColor="#8387fb"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:maxLines="12"
+                    android:inputType="textPassword"
+                    android:id="@+id/et_new_pwd"
+                    android:textColor="#666666"
+                    android:text=""
+                    android:hint="新密码"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:paddingLeft="8dp"
+                    android:background="@drawable/bg_shape_efefef"
+                    android:digits="._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+                    />
+
+                <ImageView
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:paddingLeft="14dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/iv_pwd_isShow"
+                    android:layout_gravity="right"
+                    android:src="@mipmap/iv_pwd_no_show"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </FrameLayout>
+
+
+
+            <Button
+                android:textSize="16sp"
+                android:id="@+id/btn_commit_update"
+                android:textColor="#ffffff"
+                android:text="确认"
+                android:background="@drawable/bg_shape_feb831"
+                android:layout_marginTop="30dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:visibility="gone"
+            android:id="@+id/gif_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/loading1"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

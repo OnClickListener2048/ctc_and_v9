@@ -1,0 +1,103 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@mipmap/record_bg"
+        >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="序号"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="成交时间"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/main_color"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/main_color"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/main_color"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_cumulative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="累计"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#00f5f5f5"
+            android:scrollbars="none"></ListView>
+        <com.tohier.cartercoin.columnview.LoadingView
+            android:id="@+id/cif_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <com.tohier.cartercoin.columnview.NoDataView
+            android:visibility="gone"
+            android:id="@+id/iv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>
+
+

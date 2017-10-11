@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_into_authentication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/iv_popupwindow_share"
+        />
+
+        <ImageView
+            android:id="@+id/iv_cancel_authentication"
+            android:padding="10dp"
+            android:layout_alignRight="@id/iv_into_authentication"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_cancel_authentication"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_alignRight="@id/relativeLayout"
+        android:layout_alignLeft="@id/relativeLayout"
+        android:layout_marginBottom="22dp"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/relativeLayout"
+        >
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_share_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wechat"
+            />
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_share_pengyouquan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pengyouquan"
+            />
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_share_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qq"
+            />
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_share_qzone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qzone"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_con_firm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tohier.cartercoin.activity.ContactListActivity"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/title_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back"
+            android:onClick="back"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="宝友圈"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="#4d4d4d"
+            />
+
+
+        <LinearLayout
+            android:onClick="orderBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            >
+
+        <TextView
+            android:id="@+id/tv_baoyou_order"
+            android:text="亲密度 "
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_order_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@mipmap/iv_baoyou_order"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/main_color"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_contact_moren"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#00f5f5f5"
+            android:scrollbars="none"
+            android:divider="@color/main_color"
+            android:dividerHeight="1dp"   ></ListView>
+
+
+        <TextView
+            android:id="@+id/tv_letter_center_tip"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/center_tv_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="80sp"
+            android:visibility="gone" />
+
+        <com.tohier.cartercoin.columnview.QuickIndexBar
+            android:id="@+id/quick_index_bar"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+            />
+
+        <com.tohier.cartercoin.columnview.LoadingView
+            android:id="@+id/cif_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <com.tohier.cartercoin.columnview.NoLinkView
+            android:id="@+id/iv_no_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+
+        <com.tohier.cartercoin.columnview.NoDataView
+            android:visibility="gone"
+            android:id="@+id/iv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+    </FrameLayout>
+
+</LinearLayout>

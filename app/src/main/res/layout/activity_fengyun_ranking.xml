@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+         >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:onClick="back"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="宝友圈"
+            android:textColor="#4d4d4d"
+            android:textSize="18sp" />
+    </RelativeLayout>
+		
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/main_color"/>
+
+	
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                 >
+
+                <FrameLayout
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dip" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/pv_touxiang"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/iv_member_default_head_img" />
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="#4d4d4d"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ranking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="#c0c0be"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="本尊"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#4d4d4d"
+                    android:id="@+id/tv_level" />
+
+
+                  <TextView
+                      android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/tv_zan_count"
+                    android:text=" "
+                    android:textColor="#309f39"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+
+            </LinearLayout>
+
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <LinearLayout 
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/main_color"
+                >
+
+                <TextView 
+                    android:id="@+id/tv_tongxuehui"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#ff9900"
+                    android:text="我的宝粉"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_dianzan_ranking"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text=""
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_red_line"
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:background="#feb831"
+                android:layout_alignBottom="@id/linearLayout"
+                />
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                 android:id="@+id/vp_wakuang_ranking"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" >
+             </android.support.v4.view.ViewPager>
+
+
+        </LinearLayout>
+
+</LinearLayout>

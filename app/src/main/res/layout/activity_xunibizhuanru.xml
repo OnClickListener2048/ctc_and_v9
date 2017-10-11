@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#feb831"
+    >
+
+    <RelativeLayout
+        android:id="@+id/fenxiang_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="45dip"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/title_back"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/iv_write_back" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/login_main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="资产转入"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:text="转入记录"
+            android:id="@+id/btn_zhuanrujilu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_member_head_img"
+            android:src="@mipmap/iv_member_default_head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_member_name"
+            android:textColor="#ffffff"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_shape_ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:background="#e7e7e7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_icon_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text=""/>
+            <ImageView
+                android:id="@+id/iv_wallet_address_generic_qr"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/tv_wallet_address"
+                android:textColor="#4d4d4d"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/tv_copy"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:background="@drawable/bg_shape_feb831"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="复制"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="转入说明"
+        />
+
+    <TextView
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.为了安全,转入虚拟币是由人工处理,您提交后,我们会在最短时间内为您处理。"
+        />
+
+    <TextView
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.为了加快转币的速度,我们会为每次转币支付网络费,但由于网络的不确定性,部分转币仍会较慢,请耐心等待。"
+        />
+
+    <TextView
+        android:text="3.转入币的服务费为每次转入总额的0%。"
+        android:id="@+id/tv_service_charge"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        />
+
+
+</LinearLayout>

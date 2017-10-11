@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <TextView
+        android:id="@+id/tv_α_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="51 RMB"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#4d4d4d"/>
+    <TextView
+        android:id="@+id/tv_α_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="51 RMB"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#4d4d4d"/>
+    <TextView
+        android:id="@+id/tv_α_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="51 RMB"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#4d4d4d"/>
+    <TextView
+        android:id="@+id/tv_money_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="51 RMB"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#4d4d4d"/>
+
+</LinearLayout>

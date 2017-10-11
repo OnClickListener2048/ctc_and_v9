@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的宝粉"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+
+
+        <TextView
+            android:id="@+id/tv_accelerated_recording"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="加速记录"
+            android:textColor="#4d4d4d" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout_one_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_into_classmate_contribution"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_classmate_count"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="①级宝粉0人"
+            android:textColor="#000000"
+            />
+
+
+        <ImageView
+            android:layout_gravity="center_vertical|right"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_right_arror"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="今日总贡献"
+            android:id="@+id/textView3"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/tv_classmate_contribution_today"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0.0000"
+            android:layout_marginRight="13dp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+                <View
+                    android:background="@color/main_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="7日活跃宝友量"
+                        android:id="@+id/textView4"
+                        android:textColor="#000000"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_classmate_active_today"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:layout_marginRight="13dp"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="总贡献"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_classmate_allcontribution"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0.0000"
+            android:layout_marginRight="13dp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_two_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        <LinearLayout
+        android:id="@+id/linearlayout_into_homologous_contribution"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_homologous_count"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="②级宝粉0人"
+            android:textColor="#000000"
+            />
+
+
+        <ImageView
+            android:layout_gravity="center_vertical|right"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_right_arror"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="今日总贡献"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_fellow_contribution_today"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0.0000"
+            android:layout_marginRight="13dp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+            <View
+                android:background="@color/main_color"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="7日活跃宝友量"
+                    android:textColor="#000000"
+                     />
+
+
+                <TextView
+                    android:id="@+id/tv_fellow_active_today"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:layout_marginRight="13dp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="总贡献"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_fellow_allcontribution"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0.0000"
+            android:layout_marginRight="13dp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_three_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_into_contribution_from_the_same_school"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_the_same_school_count"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="③级宝粉0人"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:layout_gravity="center_vertical|right"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_right_arror"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="今日总贡献"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_the_same_school_contribution_today"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0.0000"
+            android:layout_marginRight="13dp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+            <View
+                android:background="@color/main_color"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="7日活跃宝友量"
+                    android:textColor="#000000"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_the_same_school_active_today"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:layout_marginRight="13dp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+
+
+            <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="总贡献"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_the_same_school_allcontribution"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0.0000"
+            android:textColor="#000000"
+            android:layout_marginRight="13dp"
+            />
+</LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

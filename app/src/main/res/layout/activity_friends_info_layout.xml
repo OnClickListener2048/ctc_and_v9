@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tohier.cartercoin.columnview.HeadZoomScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffffff"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:id="@+id/hl"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp">
+
+                    <ImageView
+                        android:alpha="0.9"
+                        android:id="@+id/iv_bg"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:background="@mipmap/iv_me_toobar_bg"
+                        >
+
+                        <ImageView
+                            android:onClick="back"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:id="@+id/iv_back2"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_centerVertical="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/iv_write_back" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:background="#ffffff"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_touxaing"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:gravity="right|bottom"
+                        >
+                        <FrameLayout
+                            android:id="@+id/fl"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/geren_dianzan_bg"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone">
+                            <ImageView
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/iv_dianzan_pic"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="13dp"
+                                />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <com.tohier.cartercoin.columnview.LoadingView
+                        android:id="@+id/loadview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"></com.tohier.cartercoin.columnview.LoadingView>
+                </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#666666"
+            />
+
+        <ImageView
+            android:id="@+id/iv_sex"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_oneua"
+        android:textColor="#666666"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_test"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/btn_transfer"
+            android:textColor="#4d4d4d"
+            android:background="@drawable/myborder"
+            android:text="转账"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="38dp"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_shape_feb831"
+            android:layout_marginLeft="10dp"
+            android:text="发消息"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="38dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:textColor="#666666"
+            android:text="分乐宝账号"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_linkcode"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:textColor="#666666"
+            android:text="地区"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:textColor="#666666"
+            android:text="会员级别"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearLayout_minning_level"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:textColor="#666666"
+            android:text="挖矿级别"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:textColor="#666666"
+            android:text="亲密度"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_qinmi"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btn_del"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_shape_c4c4c4"
+            android:text="删除"
+            android:textColor="#4d4d4d"
+            android:visibility="gone"
+           />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_shape_feb831"
+            android:text="加宝友"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_test1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/btn_jujue"
+                android:textColor="#4d4d4d"
+                android:background="@drawable/myborder"
+                android:text="拒绝"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"/>
+
+            <Button
+                android:id="@+id/btn_agree"
+                android:textColor="#ffffff"
+                android:background="@drawable/bg_shape_feb831"
+                android:layout_marginLeft="10dp"
+                android:text="同意"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="0dp"
+                android:layout_height="38dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+
+</com.tohier.cartercoin.columnview.HeadZoomScrollView>

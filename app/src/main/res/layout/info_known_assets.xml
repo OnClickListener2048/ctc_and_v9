@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/id_iv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/assets_yindao"
+        />
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/id_iv_tip"-->
+        <!--android:src="@drawable/jt_down"/>-->
+
+    <ImageView
+        android:id="@+id/iv_known"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/id_iv_tip"
+        android:src="@mipmap/konw"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="10dp"
+        />
+
+</RelativeLayout>
+
+<!--copy from layout/info_gravity_left_down.xml-->

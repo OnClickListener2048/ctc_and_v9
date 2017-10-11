@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+       <TextView
+           android:textColor="#4d4d4d"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="您的小跟班"
+           />
+
+       <TextView
+           android:textColor="#4d4d4d"
+           android:id="@+id/tv_address"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           />
+       <TextView
+           android:textColor="#4d4d4d"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" - "
+           />
+       <TextView
+           android:lines="1"
+           android:ellipsize="end"
+           android:textColor="#ff0000"
+           android:id="@+id/tv_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=""
+           />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textColor="#4d4d4d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="为您的"
+            />
+
+        <TextView
+            android:textColor="#ff0000"
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+        <TextView
+            android:textColor="#4d4d4d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="矿产包加速了"
+            />
+        <TextView
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="#ff0000"
+            android:id="@+id/tv_cou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+        <TextView
+            android:textColor="#4d4d4d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天"
+            />
+    </LinearLayout>
+    <TextView
+        android:textColor="#666666"
+        android:text=""
+        android:id="@+id/tv_date"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

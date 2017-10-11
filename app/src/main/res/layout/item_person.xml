@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="afterDescendants">
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:background="@color/main_color"
+        android:gravity="center_vertical"
+        android:text="A"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_contact"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:src="@mipmap/iv_member_default_head_img"
+                    />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:text="本尊"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#4d4d4d" />
+
+                    <ImageView
+                        android:id="@+id/iv_sex"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity=""
+                    >
+                    <ImageView
+                        android:id="@+id/iv_vip"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@mipmap/iv_zhuanshi_member"
+                        android:layout_marginRight="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="注册会员"
+                        android:textSize="12sp"
+                        android:textColor="#666666"/>
+                    <TextView
+                        android:id="@+id/tv_level1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="LV.12大狂神"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#666666"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="亲密度  "
+                        android:textSize="12sp"
+                        android:gravity="right"
+                        android:textColor="#666666"
+                        android:layout_marginLeft="40dp"/>
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="#ff0000"
+                        android:layout_marginRight="20dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_dianzan_pic"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/dianzhiqian"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="23dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_count1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系人"
+        android:textColor="#4d4d4d"
+        android:padding="15dp"
+        android:background="#e7e7e7"
+        android:gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:gravity="center"
+       android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/iv_receive_coupon_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/iv_receive_coupon_top"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送您"
+                />
+
+            <TextView
+                android:id="@+id/tv_receive_coupon_money"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元红包"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赶快下单使用吧 !"
+            />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_below="@id/iv_receive_coupon_top"
+            android:id="@+id/iv_receive_coupon_buttom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/iv_receive_coupon_buttom"
+            android:layout_alignRight="@+id/iv_receive_coupon_top"
+            android:layout_alignEnd="@+id/iv_receive_coupon_top"
+            android:layout_alignLeft="@+id/iv_receive_coupon_top"
+            android:layout_alignStart="@+id/iv_receive_coupon_top">
+
+            <ListView
+                android:layout_marginBottom="20dp"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:id="@+id/lv_receive_coupon"
+                android:dividerHeight="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_above="@id/relativeLayout"
+        android:layout_marginRight="20dp"
+        android:id="@+id/iv_cancel_receive_coupon"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/iv_write_cancel"
+        />
+</RelativeLayout>

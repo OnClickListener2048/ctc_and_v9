@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.tohier.cartercoin"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 2015
+        versionName "2.1.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            ndk {
+                abiFilters "armeabi", "x86","armeabi-v7a"
+            }
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    repositories{
+        jcenter{
+            url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/"
+        }
+    }
+
+//multiDex的一些相关配置，这样配置可以让你的编译速度更快
+    dexOptions {
+        preDexLibraries = false
+        //让它不要对Lib做preDexing
+        incremental true
+        //开启incremental dexing,优化编译效率，这个功能android studio默认是关闭的。
+        javaMaxHeapSize "4g"     //增加java堆内存大小
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+
+
+
+
+dependencies {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.paradoxie:AutoVerticalTextview:0.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+    compile files('libs/commons-beanutils-1.9.2.jar')
+    compile files('libs/commons-collections-3.2.2.jar')
+    compile files('libs/commons-httpclient-3.1.jar')
+    compile files('libs/commons-lang-2.5.jar')
+    compile files('libs/ezmorph-1.0.6.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/json-lib-2.4-jdk15.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/okhttp-2.4.0.jar')
+    compile files('libs/okio-1.4.0.jar')
+    compile files('libs/open_sdk_r5756_lite.jar')
+    compile files('libs/tohierUtils.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/commons-logging-1.1.1.jar')
+    compile 'com.google.android.gms:play-services:7.0.0'
+    compile 'com.youth.banner:banner:1.4.5'
+    //最新版本
+    compile 'com.youth.banner:banner:1.3.3'
+    //旧版本，旧版本用法下面有跳转链接
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    /**
+     * 阿里通信
+     */
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(name: 'IMCore-2.0.2', ext: 'aar')
+    compile(name: 'IMKit-2.0.2', ext: 'aar')
+    compile files('libs/alicloud-android-push-sdk-2.3.5.1.jar')
+    compile files('libs/banksdk.jar')
+    compile files('libs/app-monitor-sdk-2.5.1.1_for_bc_proguard.jar')
+    compile files('libs/alipaySingle-20161129.jar')
+    compile files('libs/utdid4all-1.1.5.3_proguard.jar')
+    compile files('libs/banksdk.jar')
+}

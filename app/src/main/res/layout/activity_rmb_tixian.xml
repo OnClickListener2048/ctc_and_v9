@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="人民币提现"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back3"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+
+        <Button
+            android:textColor="#666666"
+            android:text="提现记录"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_tixianjilu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/tv_keyongrmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用人民币:"
+            android:textColor="#4d4d4d"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/title_text"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+             android:layout_below="@id/tv_keyongrmb"
+             android:layout_marginTop="10dp">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/iv_banktype_icon"
+                />
+
+          <TextView
+              android:layout_marginLeft="10dp"
+          android:id="@+id/et_selecy_yinhangka"
+          android:layout_width="match_parent"
+          android:layout_height="35dp"
+          android:background="@drawable/bg_shape_efefef"
+          android:layout_weight="1"
+          android:gravity="center_vertical"
+          android:textSize="12sp"
+          android:hint="  请选择提现方式"
+          android:paddingLeft="8dp"
+              android:textColor="#000000"
+         />
+         <ImageView
+             android:scaleType="fitXY"
+             android:padding="3dp"
+             android:id="@+id/iv_select"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:src="@mipmap/iv_add_bankcard"
+             android:layout_marginRight="10dp"
+             android:layout_marginLeft="5dp"
+             android:layout_gravity="center_vertical"
+             />
+
+        </LinearLayout>
+
+        <EditText
+            android:maxLength="8"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/bg_shape_efefef"
+            android:layout_below="@id/ll"
+            android:hint="  "
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+             android:layout_marginTop="10dp"
+            />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et_money"
+        >
+
+        <EditText
+            android:paddingLeft="20dp"
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/bg_shape_efefef"
+            android:hint=" 交易密码"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:inputType="textPassword"
+            />
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:paddingLeft="14dp"
+            android:id="@+id/iv_pwd_isShow"
+            android:layout_gravity="right"
+            android:src="@mipmap/iv_pwd_no_show"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </FrameLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relativeLayout"
+            android:layout_below="@id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:paddingLeft="20dp"
+                android:id="@+id/et_yanzhengma"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/bg_shape_efefef"
+                android:hint="  请输入短信验证码"
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_yanzhengma"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:background="@null"
+                android:text="获取短信验证码   "
+                android:textColor="#8387fb"
+                android:layout_centerHorizontal="true"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_send_yzm_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:text=""
+                android:layout_below="@id/et_yanzhengma"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:textSize="10sp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_below="@id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <Button
+                android:textColor="#ffffff"
+                android:text="提现"
+                android:layout_marginRight="10dp"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_tixian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_feb831"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_xuzhi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text="提现须知:"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:textSize="10sp"
+            />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+            <TextView
+              android:id="@+id/tv_shouxufei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text=""
+            android:layout_below="@id/tv_xuzhi1"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text="2.提现手续费少于2元按2元计算，超过2元则正常按照提现的"
+            android:layout_below="@id/tv_shouxufei"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text="3.每日每个用户只能提现一次。"
+            android:layout_below="@id/tt1"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:textSize="10sp"
+            />
+
+         <TextView
+             android:id="@+id/tt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text="4.周一到周五提现24小时内到账，在已汇出24小时后仍未收到款项，请联系在线客服。"
+            android:layout_below="@id/tt2"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:textSize="10sp"
+            />
+
+        <LinearLayout
+            android:layout_below="@id/tt3"
+            android:onClick="kefu"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_kefu_mark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:id="@+id/textView" />
+        </LinearLayout>
+    </RelativeLayout>
+
+        </LinearLayout>
+        <pl.droidsonroids.gif.GifImageView
+            android:visibility="gone"
+            android:id="@+id/gif_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/loading1"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recharge_rmb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.tohier.cartercoin.activity.RechargeRMBActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/title_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="充值中心"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="#4d4d4d"
+            />
+
+        <Button
+            android:background="@null"
+            android:id="@+id/btn_charge_record"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="充值记录"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/main_color"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人民币"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/tv_money"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0RMB"
+                    android:textColor="#ffb831"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_color"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="本次最多可转入10000.00"
+                android:padding="10dp"
+                android:background="@color/main_color"
+                android:textSize="12sp"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:id="@+id/tv_500"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="金额"
+                        android:textColor="#000000"
+                        />
+
+                    <EditText
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:id="@+id/et_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:maxLength="8"
+                        android:background="#ffffff"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                       />
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_vip_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="0.00"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_shape_price_bg"
+                android:gravity="center"
+                android:textColor="#000000"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提示：请严格按照上述金额支付，包括小数点后两位"
+                android:textColor="#ff0000"
+                android:textSize="10sp"
+                android:gravity="right"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/main_color"/>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择支付方式"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/wexin1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信支付"
+                    android:textColor="#000000"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/zidongmiaojie"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone"
+
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@null"/>
+
+                <ToggleButton
+                    android:id="@+id/btn_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#00000000"
+                    style="@style/MyToggleButton"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:textOn=""
+                    android:textOff=""/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/alipay"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝支付"
+                    android:textColor="#000000"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rengongjiesuan"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@null"/>
+
+                <ToggleButton
+                    android:id="@+id/btn_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#00000000"
+                    style="@style/MyToggleButton"
+                    android:textOn=""
+                    android:textOff=""
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_color"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_below="@id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="立即充值"
+                    android:background="@drawable/bg_shape_pay_bg"
+                    android:textColor="#ffffff"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_kefu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12sp"
+                    android:textColor="#8e8e8e"
+                    />
+                <ImageView
+                    android:id="@+id/iv_kefu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/iv_kefu_mark"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_kefu"
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/main_color"/>
+
+
+</LinearLayout>

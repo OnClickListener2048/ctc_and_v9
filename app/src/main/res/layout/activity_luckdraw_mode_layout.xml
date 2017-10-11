@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请选择抽奖方式"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e7e7e7"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout_shouyi_luckdraw"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/iv_mining_zichan"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="收益账户抽奖"
+            />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_right_arror"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="#e7e7e7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayout_juezhan_luckdraw"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/iv_mining_juezhan"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="决战账户抽奖"
+            />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_right_arror"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="#e7e7e7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayout_xiaofei_luckdraw"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/iv_mining_xiaofei"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="消费账户抽奖"
+            />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/iv_right_arror"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="#e7e7e7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

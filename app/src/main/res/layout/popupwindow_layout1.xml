@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  加宝友"
+        android:textColor="#ffffff"
+        android:drawableLeft="@mipmap/xiala_jiahaoyou"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        />
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.5"
+        android:layout_width="140dp"
+        android:layout_height="0.5dp"
+        android:background="#e7e7e7"
+        />
+    <TextView
+        android:id="@+id/tv_saoyisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="  扫一扫"
+        android:drawableLeft="@mipmap/xiala_saoyisao"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.5"
+        android:layout_width="140dp"
+        android:layout_height="0.5dp"
+        android:background="#e7e7e7"
+        />
+    <TextView
+        android:id="@+id/tv_mycode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="  二维码"
+        android:drawableLeft="@mipmap/shoukuan2"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.5"
+        android:layout_width="140dp"
+        android:layout_height="0.5dp"
+        android:background="#e7e7e7"
+        />
+    <TextView
+        android:id="@+id/tv_yaoqing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e7e7e7"
+        android:text="  邀请宝友"
+        android:drawableLeft="@mipmap/xiala_fenxiang"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="15dp"/>
+    </LinearLayout>

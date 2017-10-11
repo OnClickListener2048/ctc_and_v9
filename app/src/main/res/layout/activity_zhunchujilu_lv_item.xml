@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:textColor="#4d4d4d"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金宝币"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_jilu_time"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="2dp"
+                android:background="@mipmap/iv_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:lines="1"
+                android:text=" "
+                android:layout_gravity="center_vertical"
+                android:textColor="#4d4d4d" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="#f7f7f7"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_count_tab"
+                android:gravity="center_horizontal"
+                android:text="转出数量"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#4d4d4d"
+                />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/tv_xuniba_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="    "
+                android:layout_gravity="center_vertical"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:text="手续费"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4d4d4d"
+                />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/tv_xuniba_shouxufei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="    "
+                android:textColor="#666666" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:textColor="#4d4d4d"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_zhuanchuresult"
+                android:gravity="center"
+                android:text="完成"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--<TextView-->
+            <!--android:text="实际转出数量"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#4d4d4d"-->
+            <!--/>-->
+
+            <!--<TextView-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/tv_xunibi_actual_zhuanchu_count"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ellipsize="end"-->
+            <!--android:lines="1"-->
+            <!--android:text="    "-->
+            <!--android:textColor="#666666" />-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="#4d4d4d"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转出地址："
+                />
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_zhuanchudizhi"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="              "
+                android:textColor="#4d4d4d" />
+
+        </LinearLayout>
+        <!---->
+        <!--<LinearLayout -->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_del"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="删除"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:textColor="#ff0000" />-->
+
+
+        <!---->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

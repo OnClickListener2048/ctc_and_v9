@@ -1,0 +1,50 @@
+package com.komi.slider.ui.support;
+
+import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.komi.slider.ISlider;
+import com.komi.slider.SliderConfig;
+import com.komi.slider.SliderUtils;
+
+/**
+ * Created by Komi on 2016/3/13.
+ */
+public class SliderFragmentActivity extends FragmentActivity{
+
+    protected ISlider iSlider;
+    protected SliderConfig mConfig;
+
+    @Override
+    public void setContentView(View view) {
+        super.setContentView(view);
+        attachSlideUi();
+    }
+
+    @Override
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
+        attachSlideUi();
+    }
+
+    @Override
+    public void setContentView(View view, ViewGroup.LayoutParams params) {
+        super.setContentView(view, params);
+        attachSlideUi();
+    }
+
+    private void attachSlideUi()
+    {
+        iSlider= SliderUtils.attachActivity(this,mConfig);
+        if (mConfig == null) {
+            mConfig=iSlider.getConfig();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        iSlider.slideExit();
+    }
+}

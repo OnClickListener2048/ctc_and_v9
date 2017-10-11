@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+         >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加银行卡"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:textColorHint="#4d4d4d"
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_alignLeft="@+id/btnaddok"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_shape_efefef"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:hint="请输入姓名"
+            android:textSize="12sp"
+            android:padding="8dp"/>
+
+        <Spinner
+            android:scrollbars="none"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_down_up"
+            android:textSize="10sp"
+             android:background="@drawable/bg_shape_efefef"
+            android:gravity="center"
+             />
+
+    
+    <LinearLayout 
+        android:id="@+id/LL_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_below="@id/spinner"
+          android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_down_up">
+        <Spinner
+            android:scrollbars="none"
+            android:id="@+id/spinner_sheng"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+             android:layout_weight="1"
+              android:background="@drawable/bg_shape_efefef"
+              android:gravity="center"
+            />
+             <Spinner
+           android:scrollbars="none"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/spinner_shi"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+             android:layout_weight="1"
+             android:background="@drawable/bg_shape_efefef"
+              android:gravity="center"
+            />
+        
+        
+    </LinearLayout>
+
+    
+
+        <EditText
+            android:textColorHint="#4d4d4d"
+            android:id="@+id/et_kaihuyinhang"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_below="@id/LL_1"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_down_up"
+            android:background="@drawable/bg_shape_efefef"
+            android:hint="请输入开户银行"
+            android:textSize="12sp"
+            android:padding="8dp" />
+
+        <EditText
+            android:textColorHint="#4d4d4d"
+            android:id="@+id/et_kahao"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_below="@id/et_kaihuyinhang"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_down_up"
+            android:background="@drawable/bg_shape_efefef"
+            android:hint="请输入银行卡号"
+            android:textSize="12sp" 
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnaddok"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_below="@id/et_kahao"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_shape_feb831"
+            android:text="确认添加"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text="1.绑定的银行卡信息要与实名认证信息一致。"
+            android:layout_below="@id/btnaddok"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:textSize="10sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

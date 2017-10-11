@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:background="#feb831"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                >
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/tv_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="个人中心"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/iv_back2"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/iv_write_arrar" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:id="@+id/linearlayout_into_update_member_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/iv_member_head_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:text="头像"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/iv_right_arror"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout_copy_linkcode"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_myid_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="我的ID"
+                    />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textColor="#666666"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text=" "
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_linkcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                 <ImageView
+                     android:layout_marginRight="15dp"
+                     android:layout_gravity="center_vertical"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@mipmap/iv_copy_text"
+                     />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:visibility="gone"
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_myqrcode_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="我的二维码"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center_vertical|right"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/iv_right_arror"
+                    />
+            </LinearLayout>
+
+
+
+            <View
+                android:visibility="gone"
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_into_update_member_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_mynickname_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="昵称"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center_vertical|right"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/iv_right_arror"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout_into_update_member_sex"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_mysex_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="性别"
+                    />
+
+                <TextView
+                    android:textColor="#666666"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text=" "
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/iv_right_arror"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_into_update_member_bandphone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_myphonenum_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="手机号"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_phonenum"
+                    android:textColor="#666666"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text="  "
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_member_default_head_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/iv_right_arror"
+                    />
+
+            </LinearLayout>
+
+
+
+            <View
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <LinearLayout
+                android:clickable="false"
+                android:id="@+id/linearlayout_into_update_member_bandwx"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_mywechat_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="微信"
+                    />
+
+                <TextView
+                    android:textColor="#666666"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_wx_num"
+                    android:layout_marginLeft="30dp"
+                    android:text="  "
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_member_default_head_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/iv_right_arror"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:clickable="false"
+                android:id="@+id/linearlayout_into_update_member_bandqq"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_myqq_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="QQ"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_qq_num"
+                    android:textColor="#666666"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text="  "
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/iv_member_default_head_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/iv_right_arror"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_weight="1"
+                android:background="#e7e7e7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/linearlayout_into_update_member_bandqq"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="QQ"-->
+            <!--/>-->
+
+            <!--<TextView-->
+            <!--android:textColor="#666666"-->
+            <!--android:gravity="right"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/tv_qq_num"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:text=" "-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:src="@mipmap/iv_member_default_head_img"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:src="@mipmap/iv_right_arror"-->
+            <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:background="#e7e7e7"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"/>-->
+
+
+
+        </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/loading1"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+</LinearLayout>

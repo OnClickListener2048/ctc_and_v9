@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/rl_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_marginBottom="8dp"
+            android:gravity="start"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:id="@+id/tv_money_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignBottom="@id/tv_money"
+            />
+
+        <TextView
+            android:textColor="#4d4d4d"
+            android:layout_toRightOf="@id/tv_money_mark"
+            android:id="@+id/tv_money"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="35sp"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_toRightOf="@id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#4d4d4d"
+                android:id="@+id/tv_title_quan"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/tv_money_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#aeaeae"
+                android:id="@+id/tv_shuoming"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/tv_money_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=" "
+                android:textSize="12sp"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_youxiao_time"
+                android:layout_marginTop="5dp"
+                android:textColor="#aeaeae"
+                android:layout_toRightOf="@id/tv_money_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="12sp"
+                android:layout_centerInParent="true"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

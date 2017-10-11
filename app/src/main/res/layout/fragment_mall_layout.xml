@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+                <in.srain.cube.views.GridViewWithHeaderAndFooter
+                    android:id="@+id/gv_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:verticalSpacing="3dp"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="2"
+                    android:columnWidth="231dp"
+
+                    android:stretchMode="columnWidth"
+                    ></in.srain.cube.views.GridViewWithHeaderAndFooter>
+
+
+
+        <com.tohier.cartercoin.columnview.LoadingView
+            android:id="@+id/cif_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@mipmap/nodate"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

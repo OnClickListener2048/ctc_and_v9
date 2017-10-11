@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#88e7ebf2"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="类型"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:textColor="#7a80a1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="买入方向"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="#7a80a1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="到期时间"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="#7a80a1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="买入金额"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="#7a80a1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="盈利情况"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="#7a80a1"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/lv_deal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/main_color"
+            android:dividerHeight="1dp"  ></ListView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:src="@mipmap/no_data_1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="查看更多"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>

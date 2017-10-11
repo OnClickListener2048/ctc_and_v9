@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        >
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="手机号登录"
+            android:textColor="#4d4d4d" />
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/iv_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:maxLength="11"
+            android:id="@+id/et_name"
+            android:background="@drawable/bg_shape_efefef"
+            android:hint="请输入手机号"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+            <EditText
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:id="@+id/et_password"
+                android:background="@drawable/bg_shape_efefef"
+                android:hint="请输入密码"
+                android:layout_width="match_parent"
+                android:layout_height="38dp" />
+            
+            <ImageView
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingLeft="14dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/iv_pwd_isShow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/iv_pwd_no_show"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+        </RelativeLayout>
+        
+        <Button
+            android:id="@+id/btn_phoneLogin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape_yellow"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="登录"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            android:id="@+id/tv_forget_pwd"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textColor="#666666" />
+        
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:visibility="gone"
+        android:id="@+id/gif_loading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/loading1"
+        android:layout_gravity="center"
+        />
+
+</FrameLayout>
+
+</LinearLayout>

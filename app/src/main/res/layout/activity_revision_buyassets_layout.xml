@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/title_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_gary_back"
+            android:onClick="back"/>
+
+        <TextView
+            android:text="矿产包"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="#4d4d4d"/>
+
+        <TextView
+            android:id="@+id/tv_asstes_record"
+            android:text="购买记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:textColor="#666666" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="选择支付方式"
+                    android:textSize="16sp"
+                    android:textColor="#4d4d4d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/ll_wx"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity=""
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_wx"
+                            android:layout_width="36dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/kcb_weixin"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_wx"
+                            android:layout_centerHorizontal="true"
+                            android:text="微信"
+                            android:textColor="#4d4d4d"/>
+
+                        <ImageView
+                            android:id="@+id/iv_ed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/kcb_pre" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/ll_alipay"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff">
+
+                        <ImageView
+                            android:id="@+id/iv_alipay"
+                            android:layout_width="36dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/kcb_zhifubao"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_alipay"
+                            android:layout_centerHorizontal="true"
+                            android:text="支付宝"
+                            android:textColor="#4d4d4d"/>
+
+                        <ImageView
+                            android:id="@+id/iv_ed1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/kcb_pre"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_money"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff">
+
+                        <ImageView
+                            android:id="@+id/iv_money"
+                            android:layout_width="36dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/kcb_xianjin"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_money"
+                            android:layout_centerHorizontal="true"
+                            android:text="现金账户"
+                            android:textColor="#4d4d4d"/>
+
+                        <ImageView
+                            android:id="@+id/iv_ed2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/kcb_pre"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择优惠券"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                    <TextView
+                        android:id="@+id/tv_coupon_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="-￥ 0"
+                        android:textColor="#E84440"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@mipmap/bnt_fanhui" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_money1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="余额"
+                        android:textSize="15sp"
+                        android:textColor="#666666"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="28dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="￥0.00"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="限量抢购"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <com.tohier.cartercoin.columnview.MyDealListView
+                    android:listSelector="@null"
+                    android:background="#ffffff"
+                    android:id="@+id/lv_data2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/main_color"
+                    android:dividerHeight="1dp" ></com.tohier.cartercoin.columnview.MyDealListView>
+                <com.tohier.cartercoin.columnview.MyDealListView
+                    android:background="#ffffff"
+                    android:listSelector="@null"
+                    android:id="@+id/lv_data1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/main_color"
+                    android:dividerHeight="1dp" ></com.tohier.cartercoin.columnview.MyDealListView>
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:textColor="#666666"
+                    android:text=""
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+        <com.tohier.cartercoin.columnview.LoadingView
+            android:id="@+id/cif_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <com.tohier.cartercoin.columnview.NoLinkView
+            android:id="@+id/iv_no_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+        <com.tohier.cartercoin.columnview.NoDataView
+            android:visibility="gone"
+            android:id="@+id/iv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

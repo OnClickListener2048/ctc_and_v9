@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/fragment_share_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="公告详情"
+            android:textColor="#4d4d4d"
+            android:textSize="18sp"
+            />
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+            android:id="@+id/title_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_cancel" />
+
+    </RelativeLayout>
+    <View
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/pro"
+        android:layout_gravity="center_vertical"
+        android:max="100"
+        android:indeterminate="false"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+        <com.tohier.cartercoin.columnview.LoadingView
+            android:id="@+id/loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            ></com.tohier.cartercoin.columnview.LoadingView>
+        <com.tohier.cartercoin.columnview.NoLinkView
+            android:id="@+id/iv_no_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            />
+    </FrameLayout>
+    <TextView
+        android:textColor="#f26051"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:id="@+id/tv_target_more"
+        android:text="快分享出去吧>>"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/rl"
+            android:layout_width="234dp"
+            android:layout_height="72.5dp"
+            android:gravity=""
+            android:background="@mipmap/loading_progress_bg"
+            android:paddingLeft="10dp"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="15dp"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/progress_small"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/tv_desc_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@id/progressbar"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SliderStyle">
+        <attr name="position">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="4" />
+            <enum name="bottom" value="8" />
+            <enum name="horizontal" value="3" />
+            <enum name="vertical" value="12" />
+            <enum name="all" value="15" />
+        </attr>
+        <attr name="edgeOnly" format="boolean" />
+        <attr name="edgePercent" format="float" />
+        <attr name="scrimColor" format="color|reference" />
+        <attr name="scrimStartAlpha" format="float" />
+        <attr name="scrimEndAlpha" format="float" />
+        <attr name="velocityThreshold" format="float" />
+        <attr name="distanceThresholdPercent" format="float" />
+        <attr name="slideEnter" format="boolean" />
+        <attr name="slideExit" format="boolean" />
+        <attr name="sensitivity" format="float" />
+        <attr name="primaryColor" format="color|reference" />
+        <attr name="secondaryColor" format="color|reference" />
+    </declare-styleable>
+</resources>

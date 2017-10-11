@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RMB 现金"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_into_xianjin_flowing_water"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_xianjin_icon"
+            />
+
+        <TextView
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_xianjin_account"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="0"
+            android:textColor="#f26051"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:lines="1"
+                android:ellipsize="end"
+                android:id="@+id/tv_available_xianjin_account"
+                android:text="可用:0"
+                android:textColor="#4d4d4d"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center_vertical|right"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_right_arror"
+            />
+    </LinearLayout>
+    <View
+        android:background="#e7e7e7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_xianjin_recharge"
+            android:textColor="#feb831"
+            android:gravity="center"
+            android:text="充值"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:background="#e7e7e7"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_xianjin_withdrawals"
+            android:textColor="#f26051"
+            android:gravity="center"
+            android:text="提现"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <View
+        android:background="#e7e7e7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="α 阿尔法"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_into_aerfa_account_detail"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_aerfa_icon"
+            />
+
+        <TextView
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_aerfa_account"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="0"
+            android:textColor="#f26051"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_available_aerfa_account"
+                android:text="可用:0"
+                android:textColor="#4d4d4d"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center_vertical|right"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/iv_right_arror"
+            />
+    </LinearLayout>
+    <View
+        android:background="#e7e7e7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textColor="#feb831"
+            android:gravity="center"
+            android:text="充值"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:background="#e7e7e7"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:textColor="#f26051"
+            android:gravity="center"
+            android:text="提现"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!--<View-->
+        <!--android:background="#e7e7e7"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp"/>-->
+
+    <!--<TextView-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="ETH 以太坊"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout_into_eth_flowing_water"-->
+        <!--android:paddingBottom="20dp"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/iv_eth_icon"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:lines="1"-->
+            <!--android:ellipsize="end"-->
+            <!--android:id="@+id/tv_yitaifang_account"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="0"-->
+            <!--android:textColor="#f26051"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:lines="1"-->
+                <!--android:ellipsize="end"-->
+                <!--android:text="可用:0"-->
+                <!--android:textColor="#4d4d4d"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<TextView-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="锁定:0"-->
+                <!--android:textColor="#4d4d4d"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:layout_gravity="center_vertical|right"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:layout_width="40dip"-->
+            <!--android:layout_height="40dip"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@mipmap/iv_right_arror"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#e7e7e7"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:textColor="#feb831"-->
+            <!--android:gravity="center"-->
+            <!--android:text="充值"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<View-->
+            <!--android:background="#e7e7e7"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <!--<TextView-->
+            <!--android:textColor="#f26051"-->
+            <!--android:gravity="center"-->
+            <!--android:text="提现"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#e7e7e7"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp"/>-->
+
+    <!--<TextView-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="BTC 比特币"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout_into_btc_flowing_water"-->
+        <!--android:paddingBottom="20dp"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/iv_btc_icon"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:lines="1"-->
+            <!--android:ellipsize="end"-->
+            <!--android:id="@+id/tv_bitebi_account"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="0"-->
+            <!--android:textColor="#f26051"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:lines="1"-->
+                <!--android:ellipsize="end"-->
+                <!--android:text="可用:0"-->
+                <!--android:textColor="#4d4d4d"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<TextView-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="锁定:0"-->
+                <!--android:textColor="#4d4d4d"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:layout_gravity="center_vertical|right"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:layout_width="40dip"-->
+            <!--android:layout_height="40dip"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@mipmap/iv_right_arror"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#e7e7e7"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:textColor="#feb831"-->
+            <!--android:gravity="center"-->
+            <!--android:text="充值"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<View-->
+            <!--android:background="#e7e7e7"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <!--<TextView-->
+            <!--android:textColor="#f26051"-->
+            <!--android:gravity="center"-->
+            <!--android:text="提现"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
